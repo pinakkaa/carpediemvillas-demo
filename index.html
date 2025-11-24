@@ -283,7 +283,7 @@
         .masterplan-image {
             width: 100%;
             height: 400px;
-            margin-bottom: 30px;
+            /* margin-bottom: 30px; */
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -422,7 +422,7 @@
 
 
         .specifications-section-unique {
-            padding: 60px 20px;
+            padding: 0px 20px 60px 20px;
             max-width: 1280px;
             margin: 0 auto;
         }
@@ -2113,7 +2113,7 @@
       </div>
    </section> -->
 
-   <section class="floorplan-container">
+   <section class="floorplan-container" id="floorplan">
       <h2 class="heading pb-2 text-center">FLOOR PLAN</h2>
       
       <div class="floorplan-buttons-wrapper">
@@ -2302,7 +2302,7 @@
               </div>
             </div>
 
-            <div class="time-group-ctc">
+            <div class="time-group-ctc ">
               <div class="time-header-ctc" onclick="toggleGroup(this)">
                 <span>EDUCATION</span>
                 <span class="arrow-ctc">▼</span>
@@ -2704,7 +2704,7 @@
 
 
 
-   <script>
+   <!-- <script>
       function submitFooterContactForm(formSelector, buttonSelector, noteSelector) {
         $(formSelector).on('submit', function (event) {
           event.preventDefault();
@@ -2787,22 +2787,121 @@
       }
     
       $(document).ready(function () {
-    // Popup form
-    submitFooterContactForm(
+         // Popup form
+         submitFooterContactForm(
+            "#popup-form",
+            "#popup-form #popup-btn",
+            "#popup-form .popup-note"
+         );
+         
+         // Footer form - ADD THIS
+         submitFooterContactForm(
+            "#footer-form",
+            "#footer-form #footer-btn",
+            "#footer-form #footer-note"
+         );
+      });   
+   </script> -->
+   <script>
+      function submitFooterContactForm(formSelector, buttonSelector, noteSelector) {
+  $(formSelector).on('submit', function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    // Get the button and button text
+    var $button = $(buttonSelector);
+    var originalText = $button.text().trim();
+    
+    // Disable button and show loading state
+    $button.addClass('loading');
+    $button.text("Please Wait...");
+    $button.attr("disabled", true);
+
+    // Gather form data - Updated to include all form fields
+    var formData = {
+      name: $(formSelector + ' [name="name"]').val(),
+      email: $(formSelector + ' [name="email"]').val(),
+      phone: $(formSelector + ' [name="phone"]').val(),
+      classification: $(formSelector + ' [name="classification"]').val(),
+      looking: $(formSelector + ' [name="looking"]').val(),
+      time: $(formSelector + ' [name="time"]').val(),
+      message: $(formSelector + ' [name="message"]').val(),
+    };
+
+    $.ajax({
+      type: "POST",
+      url: "https://emailjsfuntions-428145106157.asia-south1.run.app/carpe-diem-villas",
+      data: JSON.stringify(formData),
+      contentType: "application/json",
+      dataType: "text",
+      success: function (response) {
+        $button.removeClass('loading');
+        $button.text(originalText);
+        $button.removeAttr("disabled");
+        
+        var result;
+        var parsedResponse;
+        
+        // Try to parse as JSON, if it fails treat as plain text
+        try {
+          parsedResponse = JSON.parse(response);
+        } catch (e) {
+          // If parsing fails, treat any response as success
+          parsedResponse = { status: 'success', message: response };
+        }
+
+        // Check for success - handle multiple possible success indicators
+        if (parsedResponse.status === 'success' || 
+            (typeof response === 'string' && response.toLowerCase().includes('success')) ||
+            (typeof response === 'string' && response.toLowerCase().includes('sent'))) {
+          
+          result = '<p style="color:green; font-weight: 600; font-size: 16px; width:100%">Message Sent Successfully!</p>';
+          
+          // Show the success message
+          $(noteSelector).html(result).css('display', 'block');
+          
+          // Clear the form
+          $(formSelector)[0].reset();
+          
+          // Hide the message after 5 seconds
+          setTimeout(function() {
+            $(noteSelector).fadeOut();
+          }, 5000);
+        } else {
+          result = '<p style="color:red; font-weight: 600; font-size: 16px; width:100%">' + (parsedResponse.message || "Error sending message") + "</p>";
+          $(noteSelector).html(result).css('display', 'block');
+        }
+      },
+      error: function (xhr, status, error) {
+        $button.removeClass('loading');
+        $button.text(originalText);
+        $button.removeAttr("disabled");
+        $(noteSelector)
+          .html('<p style="color:red; font-weight: 600; font-size: 16px; width:100%">Error submitting form!</p>')
+          .css('display', 'block');
+      },
+    });
+
+    return false;
+  });
+}
+
+$(document).ready(function () {
+   // Popup form
+   submitFooterContactForm(
       "#popup-form",
       "#popup-form #popup-btn",
       "#popup-form .popup-note"
-    );
-    
-    // Footer form - ADD THIS
-    submitFooterContactForm(
+   );
+   
+   // Footer form
+   submitFooterContactForm(
       "#footer-form",
       "#footer-form #footer-btn",
       "#footer-form #footer-note"
-    );
+   );
 });
-    </script>
-
+   </script>
 
 
 
