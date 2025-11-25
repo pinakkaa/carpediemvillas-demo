@@ -127,6 +127,7 @@
   height: 450px;
   object-fit: cover;
   border-radius: 8px;
+  border: 1px solid black;
 }
 
 .location-panel-ctc {
@@ -1065,6 +1066,9 @@
    background-color: #000;
    color: #000;
 }
+.banner-mobi{
+   display: none;
+}
 
 /* MOBILE RESPONSIVE FIX */
 @media (max-width: 768px) {
@@ -1108,6 +1112,15 @@
 }
 .mobi-res-div{
    padding: 0 1rem;
+}
+.banner-desk{
+   display: none;
+}
+.banner-mobi{
+   display: block;
+}
+.img-fluid{
+   height: 250px;
 }
 body{
    width: 100vw;
@@ -1205,9 +1218,10 @@ body{
                   <div class="carousel-caption d-none d-md-block">
                      <h5>Live miles away from the concrete jungle.</h5> -->
                      <picture>
-                        <source media="(min-width:768px)" srcset="./Images/Banner.png" class="w-100" height="584" width="1350">
-                        <source media="(max-width:768px)" class="w-100" srcset="./Images/Banner.png" height="584" width="412">
-                        <img src="./Images/Banner.png" class="w-100" alt="" title="">
+                        <!-- <source media="(min-width:768px)" srcset="./Images/Banner.png" class="w-100" height="584" width="1350">
+                        <source media="(max-width:768px)" class="w-100" srcset="./Images/Banner.png" height="584" width="412"> -->
+                        <img src="./Images/Banner.png" class="w-100 banner-desk" alt="" title="">
+                        <img src="./Images/Banner-mobile.png" class="w-100 banner-mobi" alt="" title="">
                      </picture>
 
                   </div>
@@ -1215,9 +1229,10 @@ body{
                   <div class="carousel-item active" data-bs-interval="5000" bis_skin_checked="1">
 
                      <picture>
-                        <source media="(min-width:768px)" srcset="./Images/Banner.png" class="w-100" height="584" width="1350">
-                        <source media="(max-width:768px)" class="w-100" srcset="./Images/Banner.png" height="584" width="412">
-                        <img src="./Images/Banner.png" class="w-100" alt="" title="">
+                        <!-- <source media="(min-width:768px)" srcset="./Images/Banner.png" class="w-100" height="584" width="1350">
+                        <source media="(max-width:768px)" class="w-100" srcset="./Images/Banner.png" height="584" width="412"> -->
+                        <img src="./Images/Banner.png" class="w-100 banner-desk" alt="" title="">
+                        <img src="./Images/Banner-mobile.png" class="w-100 banner-mobi" alt="" title="">
                      </picture>
                   </div>
                </div>
@@ -1438,7 +1453,7 @@ body{
 
             <div class="col-md-4 col-12" bis_skin_checked="1">
                <div class="ins-sec px-2 px-md-3 " bis_skin_checked="1">
-                  <img class="lazy img-fluid rounded-bottom rounded-5 entered exited" width="100%" height="198px" src="./Images/designs/design1.png">
+                  <img class="lazy rounded-bottom rounded-5 entered exited" width="100%" height="198px" src="./Images/designs/design1.png">
                   <div class="details  bg-white p-3 card-content-wrapper" bis_skin_checked="1">
                      <h4 class="text-dark text-mobile fw-lighter pb-3 text-center">WHERE BOUNDARIES FADE, AND SOUL AWAKENS</h4>
                      <p class="text-justify">Daylight bursts with promise, unrestrained by walls or lines. Morning inspires quiet wonder; evening weaves golden memories. <br>
@@ -1458,7 +1473,7 @@ body{
                        <br> Because you were never meant to be far away from it.
                         </p>
                   </div>
-                  <img src="./Images/designs/desgin2.png" class="img-fluid  rounded-top rounded-5" width="100%" height="198px">
+                  <img src="./Images/designs/desgin2.png" class="  rounded-top rounded-5" width="100%" height="198px">
                </div>
             </div>
 
@@ -1480,7 +1495,7 @@ body{
 
             <div class="col-md-4 col-12" bis_skin_checked="1">
                <div class="ins-sec px-2 px-md-3" bis_skin_checked="1">
-                  <img src="./Images/designs/design3.png" class="img-fluid rounded-bottom rounded-5" width="100%" height="198px">
+                  <img src="./Images/designs/design3.png" class=" rounded-bottom rounded-5" width="100%" height="198px">
                   <div class="details  bg-white p-3 card-content-wrapper" bis_skin_checked="1">
                      <h4 class="text-dark text-mobile  fw-lighter pb-3 text-center">FOREVER IN A SPACE THAT SETS YOU FREE
                      </h4>
@@ -2306,7 +2321,7 @@ body{
 
 
    <section class="py-4 ">
-      <div class="container" bis_skin_checked="1">
+      <div class="container" bis_skin_checked="1" style="padding: 0 2rem;">
          <div class="row" bis_skin_checked="1">
             <h2 class="heading text-center">Gallery</h2>
             <!-- <p class="text-center text-small">Resplendence in every frame</p> -->
@@ -2405,7 +2420,7 @@ body{
           <div class="map-section-ctc">
             <div class="map-container pulse-animation">
               <img
-                src="./Images/Loc-Adv.png"
+                src="./Images/Loc-Adv (1).png"
                 alt="Location Map"
                 class="map-image-ctc"
               />
