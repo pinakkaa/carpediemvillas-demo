@@ -246,7 +246,7 @@
   position: relative;
   padding-left: 30px; /* space for the tick */
   margin-bottom: 8px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .sub-text{
    font-size: 1rem;
@@ -358,6 +358,7 @@
             font-size: 11px;
             color: #555;
             transition: color 0.2s ease;
+            font-family: "Raleway", sans-serif !important;
         }
 
         .amenity-item:hover {
@@ -1013,7 +1014,8 @@
   }
 }
 .what-we-offer-wrapper li::before {
-  content: "✔";
+  /* content: "✔"; */
+  content: "✅";
   color: #00a651; /* green color */
   font-weight: bold;
   position: absolute;
@@ -1030,11 +1032,12 @@
   position: relative;
   padding-left: 25px; 
   margin-bottom: 2px;
-  font-weight: 500;
+  /* font-weight: 500; */
 }
 
 .project-highlights-wrapper li::before {
-  content: "✔";
+  /* content: "✔"; */
+  content: "✅";
   color: #00a651; 
   font-weight: bold;
   position: absolute;
@@ -1150,6 +1153,12 @@ body{
 .overview-icons {
   width: 20px;
   height: 20px;
+}
+dl, ol, ul{
+   margin-bottom: 3rem;
+}
+.what-we-offer-wrapper{
+   padding: 0 0 0 5px !important;
 }
 }
 .spec-icon{
@@ -2453,7 +2462,7 @@ body{
 
    <div class="container-ctc" id="location">
         <div class="header-ctc">
-          <h1 class="title-ctc">LOCATION ADVANTAGES</h1>
+          <h1 class="heading">LOCATION ADVANTAGES</h1>
         </div>
 
         <div class="main-content-ctc">
