@@ -17,7 +17,8 @@ h5,
 h6,
 p,
 .heading {
-  font-family: 'Cinzel', serif !important;
+  /* font-family: 'Cinzel', serif !important; */
+  font-family: "Inter", sans-serif;
 
 }
 h1,
@@ -50,7 +51,7 @@ p{
 .logo {
   max-height: 85px;
   padding: 1rem 0;
-  max-width: 120px;
+  max-width: 100px;
 }
 
 .scroll-nav .logo {
