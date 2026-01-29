@@ -444,8 +444,8 @@
 
 
         .specifications-section-unique {
-            padding: 0px 20px 60px 20px;
-            max-width: 1280px;
+            padding: 20px 20px 60px 20px;
+            /* max-width: 1280px; */
             margin: 0 auto;
         }
 
@@ -462,6 +462,7 @@
         .spec-slider-container {
             position: relative;
             padding: 0 60px;
+            max-width: 1280px;
         }
 
         .spec-slider-wrapper {
@@ -775,7 +776,7 @@
 
       .floorplan-image-wrapper {
           flex: 1;
-          border: 1px solid #000000;
+          /* border: 1px solid #000000; */
           overflow: hidden;
           display: flex;
           justify-content: center;
@@ -784,9 +785,11 @@
 
       .floorplan-image {
           /* width: 100%; */
-          height: 250px;
+          height: 350px;
           object-fit: cover;
           display: block;
+          border: 1px solid #000000;
+          border-radius: 20px;
       }
 
       .floorplan-nav-btn {
@@ -1063,7 +1066,7 @@
 
 .card-content-wrapper{
    height: 390px;
-   border-radius: 40px;
+   /* border-radius: 40px; */
 }
 
 .overview-icons{
@@ -1208,7 +1211,25 @@ dl, ol, ul{
    padding: 0 2rem;
    text-align: center;
 }
+@media (max-width: 768px) {
+   html, body{
+      width: 100%;
+      overflow-x: hidden;
+   }
+}
+
+body {
+   /* background: #77ac69; */
+}
+
+.project-overview{
+   background-color: #3B4B31;
+}
+.heading{
+   color: #fff !important;
+}
   </style>
+
 <script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/traffic.js"></script></head>
 
 <body bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQiLCJUSUtUT0siOiJkaXNhYmxlZCIsIkxJTktFRElOIjoiZGlzYWJsZWQiLCJDT05GSUciOiJkaXNhYmxlZCJ9LCJ2ZXJzaW9uIjoiMi4wLjMzIiwic2NvcmUiOjIwMDMzfV0=" __processed_f9ed982f-6f7e-4fb1-8569-40061e77f0fd__="true" class="" style="">
@@ -1288,8 +1309,8 @@ dl, ol, ul{
                      <picture>
                         <!-- <source media="(min-width:768px)" srcset="./Images/Banner.png" class="w-100" height="584" width="1350">
                         <source media="(max-width:768px)" class="w-100" srcset="./Images/Banner.png" height="584" width="412"> -->
-                        <img src="./Images/Banner.png" class="w-100 banner-desk" alt="" title="">
-                        <img src="./Images/Banner-mobile.png" class="w-100 banner-mobi" alt="" title="">
+                        <img src="./Images/Banner2.png" class="w-100 banner-desk" alt="" title="">
+                        <img src="./Images/Banner-mobile2.png" class="w-100 banner-mobi" alt="" title="">
                      </picture>
                   </div>
                </div>
@@ -1388,7 +1409,7 @@ dl, ol, ul{
                   <!-- <p class="text-justify pf-siz">
                      
                   </p> -->
-                  <p class="text-justify pf-siz">
+                  <p class="text-justify pf-siz about-section-para" >
                      Carpe Diem Villas is a boutique community designed for those who believe life should be celebrated every day. Offering premium villas surrounded by lush landscapes, the project blends refined architecture with the comfort of spacious living. Each villa is thoughtfully crafted to ensure natural light, privacy, and a seamless indoor–outdoor lifestyle. With premium amenities, secure infrastructure, and excellent connectivity to key urban locations, Carpe Diem Villas promises a life where convenience and calm coexist beautifully. Here, every sunrise brings a new opportunity to enjoy the finer things in life — because at Carpe Diem Villas, you truly seize the day.                
                   </p>
 
@@ -1398,30 +1419,96 @@ dl, ol, ul{
             </div>
             <div class="col-md-7 col-12  " bis_skin_checked="1">
                <!-- <img class="lazy w-100 rou img-fluid entered loading" width="755" height="523" loading="lazy" src="./Images/EAST-VILLA-NIGHT_VIEW.jpg" data-ll-status="loading"> -->
-               <img class="lazy w-100 rou img-fluid entered loading" width="755" height="523" loading="lazy" src="./Images/image2.png" data-ll-status="loading">
+               <img class="lazy w-100 rou img-fluid entered loading about-image-1" width="755" height="523" loading="lazy" src="./Images/clubhouse.png" data-ll-status="loading">
             </div>
          </div>
       </div>
    </section>
 
 
-   <section class="py-4  bg-main lr-sec mobi-res-div" >
+   <style>
+      /* @media (max-resolution: 120dpi) {
+         .about-image-1 {
+           height: 550px !important;
+           width: 100% !important;
+         }
+      } */
+
+      /* 100%  */
+      @media (resolution: 96dpi), (max-resolution: 110dpi) {
+         .about-image-1{
+            height: 600px !important;
+         }
+         .about-section-para{
+            font-size: 1.1rem !important;
+            padding: 2rem !important;
+         }
+         .extra-5{
+            padding: 5rem !important;
+         }
+         .styled-list li{
+            font-size: 1.1rem !important;
+         }
+         .life-capre-image{
+            width:  100% !important;
+            height: 300px !important;
+         }
+         .life-title{
+            font-size: 1.3rem !important;
+            padding: 2rem !important;
+         }
+         .left-para{
+            font-size: 1.1rem !important;
+            padding: 1rem !important;
+         }
+         .hero-sub-heading{
+            font-size: 1.2rem !important;
+         }
+         .about-sub-text{
+            font-size: 1.1rem !important;
+         }
+         .enq-btn{
+            right: -3.5% !important;
+         }
+      }
+      /* 133%  */
+      @media (min-resolution: 120dpi) and (max-resolution: 150dpi) {
+         .about-image-1{
+            height: 400px !important;
+         }
+         .about-section-para{
+            font-size: 0.8rem !important;
+            /* padding: 2rem !important; */
+         }
+         .extra-5{
+            padding: 2rem !important;
+         }
+         .life-title{
+            padding: 1rem !important;
+         }
+         .left-para{
+            padding: 1rem !important;
+         }
+      }
+   </style>
+
+   <section class="py-4  bg-main lr-sec mobi-res-div"  style="background-color: #3B4B31;">
       <div class="container-fluid  px-0" bis_skin_checked="1">
 
          <div class=" row  py-3 d-flex align-items-center g-0 pt-md-4" bis_skin_checked="1">
             <div class="col-md-7 col-12 order-last order-sm-1 " bis_skin_checked="1">
                <!-- <img class="w-100 lazy round-left img-fluid entered exited" width="755" height="523" src="./Images/NORTH_VILLA_NIGHT_VIEW.jpg"> -->
-               <img class="w-100 lazy round-left img-fluid entered exited" width="755" height="523" src="./Images/image1.png">
+               <img class="w-100 lazy round-left img-fluid entered exited about-image-1" width="755" height="523" src="./Images/basket ball.png">
             </div>
             <div class="col-md-5 col-12 bg-white  order-sm-2 order-first " bis_skin_checked="1">
 
-               <div class="px-3  banner-details pad-tb left--100  bg-white rou" bis_skin_checked="1">
+               <div class="px-3  banner-details pad-tb left--100  bg-white rou  about-section-para extra-5" bis_skin_checked="1">
                   <h2 class="heading pb-2">WHAT WE OFFER</h2>
                   <p class="hero-sub-heading">FOREVER IN VILLA SPACES CRAFTED WITH PURPOSE</p>
-                  <p class="text-justify pf-siz"> Each villa is shaped to maximize views, privacy, and natural ventilation. Balanced proportions and intuitive layouts make everyday living effortless. A design philosophy where inside and outside feel perfectly aligned.</p>
-                  <ul class="what-we-offer-wrapper">
-                     <li>1163 TO 2906 SQ FT PLOT AREA</li>
-                     <li>EAST | WEST | NORTH | SOUTH FACING VILLAS</li>
+                  <p class="text-justify pf-siz about-sub-text"> Each villa is shaped to maximize views, privacy, and natural ventilation. Balanced proportions and intuitive layouts make everyday living effortless. A design philosophy where inside and outside feel perfectly aligned.</p>
+                  <ul class="what-we-offer-wrapper ">
+                     <li class=" about-sub-text">1163 TO 2906 SQ FT PLOT AREA</li>
+                     <li class=" about-sub-text">EAST | WEST | NORTH | SOUTH FACING VILLAS</li>
                   </ul>  
                </div>
             </div>
@@ -1436,8 +1523,8 @@ dl, ol, ul{
       <div class="container-fluid px-0" bis_skin_checked="1">
 
          <div class=" row   d-flex align-items-center g-0 pt-md-4" bis_skin_checked="1">
-            <div class="col-md-5 col-12 bg-white" bis_skin_checked="1">
-               <div class="px-3 pad-tb banner-details  left-100 bg-white round-left" bis_skin_checked="1">
+            <div class="col-md-5 col-12 bg-white" bis_skin_checked="1" style="padding: 0rem !important; font-size: 1rem !important;">
+               <div class="px-3 pad-tb banner-details  left-100 bg-white round-left  about-section-para extra-5" bis_skin_checked="1" >
                   <h2 class="heading pb-2">PROJECT HIGHLIGHTS</h2>
                   <!-- <p>INSTEAD OF BLARING SIRENS</p> -->
                   <!-- <p class="text-justify">  As you make your way to the first level, 
@@ -1448,7 +1535,7 @@ dl, ol, ul{
                      the central story here is one of openness 
                      and togetherness            
                   </p> -->
-                  <ul class="project-highlights-wrapper">
+                  <ul class="project-highlights-wrapper styled-list">
                      <li>Vastu Compliant</li>
                      <li>24/7 Pneumatic System for Water Supply</li>
                      <li>40ft & 30ft Wide CC Roads With pockets of Pattern Cement Tiles/pavers</li>
@@ -1467,7 +1554,7 @@ dl, ol, ul{
             </div>
             <div class="col-md-7 col-12  " bis_skin_checked="1">
                <!-- <img class="lazy w-100 rou img-fluid entered exited" width="755" height="523" src="./Images/SOUTH_VILLA-NIGHT_VIEW.jpg"> -->
-               <img class="lazy w-100 rou img-fluid entered exited" width="755" height="523" src="./Images/image3.png">
+               <img class="lazy w-100 rou img-fluid entered exited about-image-1" width="755" height="523" src="./Images/swimming pool.png">
             </div>
          </div>
       </div>
@@ -1502,8 +1589,7 @@ dl, ol, ul{
 
 
 
-
-   <section class="pt-3 3 pb-4  bg-main" id="design">
+   <section class="pt-3 3 pb-4  bg-main" id="design" style="background-color: #3B4B31;">
       <div class="container-fluid " bis_skin_checked="1">
          <div class="row" bis_skin_checked="1">
             <h2 class="heading text-dark text-center"> LIFE AT CARPE DIEM</h2>
@@ -1513,10 +1599,10 @@ dl, ol, ul{
 
             <div class="col-md-4 col-12" bis_skin_checked="1">
                <div class="ins-sec px-2 px-md-3 " bis_skin_checked="1">
-                  <img class="lazy rounded-bottom rounded-5 entered exited" width="100%" height="198px" src="./Images/designs/design1.png">
-                  <div class="details  bg-white p-3 card-content-wrapper" bis_skin_checked="1">
+                  <img class="lazy rounded-bottom rounded-5 entered exited life-capre-image" width="100%" height="198px" src="./Images/Gallery/Gallery(12).png">
+                  <div class="details  bg-white p-3 card-content-wrapper" bis_skin_checked="1" style="border-bottom-left-radius: 40px; border-bottom-right-radius: 40px;">
                      <h4 class="text-dark text-mobile fw-lighter pb-3 text-center life-title">WHERE BOUNDARIES FADE, AND SOUL AWAKENS</h4>
-                     <p class="text-justify pf-siz">Daylight bursts with promise, unrestrained by walls or lines. Morning inspires quiet wonder; evening weaves golden memories. <br>
+                     <p class="text-justify pf-siz left-para">Daylight bursts with promise, unrestrained by walls or lines. Morning inspires quiet wonder; evening weaves golden memories. <br>
                         Life here is a poem-shaped by choice, open to joy and rest. Longing alone guides you, each day a fresh invitation. Welcome to where belonging is effortless, the Carpe Diem community experience.
                      </p>
                   </div>
@@ -1526,24 +1612,24 @@ dl, ol, ul{
             <div class="col-md-4 col-12 d-md-block d-none" bis_skin_checked="1">
                <div class="ins-sec px-2 px-md-3" bis_skin_checked="1">
 
-                  <div class="details  bg-white p-3 card-content-wrapper" bis_skin_checked="1">
+                  <div class="details  bg-white p-3 card-content-wrapper" bis_skin_checked="1"  style="border-top-left-radius: 40px; border-top-right-radius: 40px;">
                      <h4 class="text-dark text-mobile fw-lighter pb-3 text-center life-title">FOREVER IN A COMMUNITY ROOTED IN NATURE
                      </h4>
-                     <p class="text-justify pf-siz">In a world drifting farther from the earth, Carpe Diem brings you closer-forever. Set across 14 acres of consciously crafted green, this villa community is designed to live in harmony with the land. <br> Every turn is a breath of fresh air, every home a quiet return to balance, beauty, and belonging. Here, nature isn't a view— it's your everyday backdrop, your rhythm, your refuge.
+                     <p class="text-justify pf-siz left-para">In a world drifting farther from the earth, Carpe Diem brings you closer-forever. Set across 14 acres of consciously crafted green, this villa community is designed to live in harmony with the land. <br> Every turn is a breath of fresh air, every home a quiet return to balance, beauty, and belonging. Here, nature isn't a view— it's your everyday backdrop, your rhythm, your refuge.
                        <br> Because you were never meant to be far away from it.
                         </p>
                   </div>
-                  <img src="./Images/designs/desgin2.png" class="  rounded-top rounded-5" width="100%" height="198px">
+                  <img src="./Images/Gallery/Gallery(9).png" class="life-capre-image  rounded-top rounded-5" width="100%" height="198px">
                </div>
             </div>
 
             <div class="col-md-4 col-12" bis_skin_checked="1">
                <div class="ins-sec px-2 px-md-3" bis_skin_checked="1">
-                  <img src="./Images/designs/design3.png" class=" rounded-bottom rounded-5" width="100%" height="198px">
-                  <div class="details  bg-white p-3 card-content-wrapper" bis_skin_checked="1">
+                  <img src="./Images/clubhouse.png" class="life-capre-image rounded-bottom rounded-5" width="100%" height="198px">
+                  <div class="details  bg-white p-3 card-content-wrapper" bis_skin_checked="1"  style="border-bottom-left-radius: 40px; border-bottom-right-radius: 40px;">
                      <h4 class="text-dark text-mobile  fw-lighter pb-3 text-center life-title">FOREVER IN A SPACE THAT SETS YOU FREE
                      </h4>
-                     <p class="text-justify pf-siz"> Independent villas crafted for those who value calm over crowds. Every home opens to green views, soft light, and effortless privacy.
+                     <p class="text-justify pf-siz left-para"> Independent villas crafted for those who value calm over crowds. Every home opens to green views, soft light, and effortless privacy.
 
                         <br> What once felt far away in the city - space, silence, and nature —now becomes something you are forever in, every single day.
                          
@@ -1580,7 +1666,7 @@ dl, ol, ul{
 
    <section class="py-4  bg-main lr-sec bg-white" id="amenities">
       <div class="container px-0" bis_skin_checked="1">
-         <h2 class="heading pb-2 text-center">CLUBHOUSE AMENITIES</h2>
+         <h2 class="heading pb-2 text-center" style="color: #000 !important;">CLUBHOUSE AMENITIES</h2>
          <h6 class="sub-text">From sunrise swims to starlit stories, every level is curated for how you live and unwind. Thoughtful, expansive, and deeply connected-this is your everyday retreat.</h6>
          <div class="row py-3" bis_skin_checked="1">
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
@@ -1686,34 +1772,34 @@ dl, ol, ul{
       </div>
       
    </section>
-   <section class="py-4 lr-sec " id="amenities" style="background-color: #FAF3EF;">
+   <section class="py-4 lr-sec " id="amenities" style="background-color: #3B4B31;">
       <div class="container px-0" bis_skin_checked="1">
          <h2 class="heading pb-2 text-center">OUTDOOR AMENITIES</h2>
-         <h6 class="sub-text">Active spaces inspire you to stretch, breathe, and feel alive. Well-being becomes a gentle rhythm woven into everyday life.</h6>
+         <h6 class="sub-text" style="color: #fff;">Active spaces inspire you to stretch, breathe, and feel alive. Well-being becomes a gentle rhythm woven into everyday life.</h6>
          <div class="row py-3" bis_skin_checked="1">
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Icons/Outdoor Amenities/amphitheatre.svg" alt="Villa" class="w-25 pb-2" width="66px" height="55px" loading="lazy">
-               <h3 class="elementor-image-box-title">Central Lawn with Amphitheatre</h3>
+               <h3 class="elementor-image-box-title" style="color: #fff;">Central Lawn with Amphitheatre</h3>
             </div>
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Icons/Outdoor Amenities/walking-man.svg" alt="Villa" class="w-25 pb-2" width="66px" height="55px" loading="lazy">
-               <h3 class="elementor-image-box-title">Walking Track</h3>
+               <h3 class="elementor-image-box-title" style="color: #fff;">Walking Track</h3>
             </div>
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Icons/Outdoor Amenities/chess.svg" alt="Villa" class="w-25 pb-2" width="66px" height="55px" loading="lazy">
-               <h3 class="elementor-image-box-title">Outdoor Chess Play Area</h3>
+               <h3 class="elementor-image-box-title" style="color: #fff;">Outdoor Chess Play Area</h3>
             </div>
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Icons/Outdoor Amenities/playing.svg" alt="Villa" class="w-25 pb-2" width="66px" height="55px" loading="lazy">
-               <h3 class="elementor-image-box-title">Kids Play Area</h3>
+               <h3 class="elementor-image-box-title" style="color: #fff;">Kids Play Area</h3>
             </div>
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Icons/Outdoor Amenities/skater.svg" alt="Villa" class="w-25 pb-2" width="66px" height="55px" loading="lazy">
-               <h3 class="elementor-image-box-title">Skating/ Bicycling Park</h3>
+               <h3 class="elementor-image-box-title" style="color: #fff;">Skating/ Bicycling Park</h3>
             </div>
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Icons/Outdoor Amenities/park.svg" alt="Villa" class="w-25 pb-2" width="66px" height="55px" loading="lazy">
-               <h3 class="elementor-image-box-title">Sonic Park</h3>
+               <h3 class="elementor-image-box-title" style="color: #fff;">Sonic Park</h3>
             </div>
          </div>
          <div class="row pb-3  margin-top-1rem" bis_skin_checked="1">
@@ -1723,41 +1809,41 @@ dl, ol, ul{
             </div> -->
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Icons/Outdoor Amenities/ball.svg" alt="Villa" class="w-25 pb-2" width="66px" height="55px" loading="lazy">
-               <h3 class="elementor-image-box-title">Futsal Play Court</h3>
+               <h3 class="elementor-image-box-title" style="color: #fff;">Futsal Play Court</h3>
             </div>
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Icons/Outdoor Amenities/pergola.svg" alt="Villa" class="w-25 pb-2" width="66px" height="55px" loading="lazy">
-               <h3 class="elementor-image-box-title">Seating Plaza with Pergola</h3>
+               <h3 class="elementor-image-box-title" style="color: #fff;">Seating Plaza with Pergola</h3>
             </div>
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Icons/Outdoor Amenities/basketball.svg" alt="Villa" class="w-25 pb-2" width="66px" height="55px" loading="lazy">
-               <h3 class="elementor-image-box-title">Basketball & Tennis</h3>
+               <h3 class="elementor-image-box-title" style="color: #fff;">Basketball & Tennis</h3>
             </div>
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Icons/Outdoor Amenities/badminton.svg" alt="Villa" class="w-25 pb-2" width="66px" height="55px" loading="lazy">
-               <h3 class="elementor-image-box-title">Outdoor Badminton Court</h3>
+               <h3 class="elementor-image-box-title" style="color: #fff;">Outdoor Badminton Court</h3>
             </div>
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Icons/Outdoor Amenities/volleyball.svg" alt="Villa" class="w-25 pb-2" width="66px" height="55px" loading="lazy">
-               <h3 class="elementor-image-box-title">Volleyball Court</h3>
+               <h3 class="elementor-image-box-title" style="color: #fff;">Volleyball Court</h3>
             </div>
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Icons/Outdoor Amenities/cricket.svg" alt="Villa" class="w-25 pb-2" width="66px" height="55px" loading="lazy">
-               <h3 class="elementor-image-box-title">Cricket Practising Pitch</h3>
+               <h3 class="elementor-image-box-title" style="color: #fff;">Cricket Practising Pitch</h3>
             </div>
          </div>
          <div class="row pb-3  margin-top-1rem" bis_skin_checked="1">
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Icons/Outdoor Amenities/outdoor-fitness.svg" alt="Villa" class="w-25 pb-2" width="66px" height="55px" loading="lazy">
-               <h3 class="elementor-image-box-title">Outdoor Fitness Station</h3>
+               <h3 class="elementor-image-box-title" style="color: #fff;">Outdoor Fitness Station</h3>
             </div>
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Icons/Outdoor Amenities/plantation.svg" alt="Villa" class="w-25 pb-2" width="66px" height="55px" loading="lazy">
-               <h3 class="elementor-image-box-title">Avenue Plantation & Medicinal Plantation</h3>
+               <h3 class="elementor-image-box-title" style="color: #fff;">Avenue Plantation & Medicinal Plantation</h3>
             </div>
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Icons/Outdoor Amenities/yoga.svg" alt="Villa" class="w-25 pb-2" width="66px" height="55px" loading="lazy">
-               <h3 class="elementor-image-box-title">Outdoor Yoga/ Meditation Space</h3>
+               <h3 class="elementor-image-box-title" style="color: #fff;">Outdoor Yoga/ Meditation Space</h3>
             </div>
          </div>
 
@@ -1943,7 +2029,7 @@ dl, ol, ul{
 
 
 
-   <section class="specifications-section-unique">
+   <section class="specifications-section-unique" style="background-color: #3B4B31;display: flex;flex-direction: column;justify-content: center;align-items: center;">
       <h2 class="heading pb-2 text-center">SPECIFICATION</h2>
 
       <div class="spec-slider-container">
@@ -2350,8 +2436,8 @@ dl, ol, ul{
       </div>
    </section> -->
 
-   <section class="floorplan-container" id="floorplan">
-      <h2 class="heading pb-2 text-center">FLOOR PLAN</h2>
+   <section class="floorplan-container" id="floorplan" style="padding: 30px 0;">
+      <h2 class="heading pb-2 text-center" style="color: #000 !important; margin-bottom: 1.5rem;">FLOOR PLAN</h2>
       
       <div class="floorplan-buttons-wrapper">
           <button class="floorplan-btn fp-active" data-fp-plan="east-30x50">EAST FACING VILLA <br> 30' X 50'</button>
@@ -2369,11 +2455,11 @@ dl, ol, ul{
               <div class="floorplan-slides-wrapper" id="fpSlidesWrapper">
                   <!-- Slides will be loaded dynamically -->
               </div>
-              <button class="floorplan-nav-btn floorplan-prev" id="fpPrevBtn">‹</button>
-              <button class="floorplan-nav-btn floorplan-next" id="fpNextBtn">›</button>
+              <button class="floorplan-nav-btn floorplan-prev" id="fpPrevBtn" style="display: none;">‹</button>
+              <button class="floorplan-nav-btn floorplan-next" id="fpNextBtn" style="display: none;">›</button>
           </div>
           
-          <div class="floorplan-dots" id="fpDotsContainer"></div>
+          <div class="floorplan-dots" id="fpDotsContainer" style="display: none;"></div>
           
           <div class="floorplan-info">
               <h3 id="fpPlanName">EAST FACING VILLA 30' X 50'</h3>
@@ -2384,7 +2470,7 @@ dl, ol, ul{
 
 
 
-   <section class="py-4 ">
+   <section class="py-4 " style="background-color: #3B4B31;">
       <div class="container" bis_skin_checked="1" style="padding: 0 2rem;">
          <div class="row" bis_skin_checked="1">
             <h2 class="heading text-center">Gallery</h2>
@@ -2394,9 +2480,24 @@ dl, ol, ul{
             <div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events" id="swiper_gallery" bis_skin_checked="1">
                <div class="swiper-wrapper  mb-3" id="swiper-wrapper-4f7af71ce7fffb2d" aria-live="polite" bis_skin_checked="1" style="transform: translate3d(0px, 0px, 0px);">
 
+                  <div class="swiper-slide" role="group" aria-label="6 / 13" bis_skin_checked="1" style="width: 406.667px; margin-right: 50px;">
+                     <a data-fancybox="gallery-0" href="./Images/Gallery/Gallery(12).png" data-expand="-1" class=" lazy">
+                        <img src="./Images/Gallery/Gallery(12).png" alt="availon farms gallery" class="img-fluid py-2" width="406px" height="505px">
+                     </a>
+                  </div>
+                  <div class="swiper-slide" role="group" aria-label="6 / 13" bis_skin_checked="1" style="width: 406.667px; margin-right: 50px;">
+                     <a data-fancybox="gallery-0" href="./Images/Gallery/Gallery(13).png" data-expand="-1" class=" lazy">
+                        <img src="./Images/Gallery/Gallery(13).png" alt="availon farms gallery" class="img-fluid py-2" width="406px" height="505px">
+                     </a>
+                  </div>
                   <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 13" bis_skin_checked="1" style="width: 406.667px; margin-right: 50px;">
                      <a data-fancybox="gallery-0" href="./Images/Gallery/Gallery(1).png" data-expand="-1" class="lazy entered exited" data-ll-status="entered">
                         <img alt="availon farms gallery" class="img-fluid py-2 lazy entered exited" width="406px" height="505px" src="./Images/Gallery/Gallery(1).png">
+                     </a>
+                  </div>
+                  <div class="swiper-slide" role="group" aria-label="5 / 13" bis_skin_checked="1" style="width: 406.667px; margin-right: 50px;">
+                     <a data-fancybox="gallery-0" href="./Images/Gallery/Gallery(9).png" data-expand="-1" class=" lazy">
+                        <img src="./Images/Gallery/Gallery(9).png" alt="availon farms gallery" class="img-fluid py-2" width="406px" height="505px">
                      </a>
                   </div>
                   <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 13" bis_skin_checked="1" style="width: 406.667px; margin-right: 50px;">
@@ -2422,6 +2523,26 @@ dl, ol, ul{
                   <div class="swiper-slide" role="group" aria-label="6 / 13" bis_skin_checked="1" style="width: 406.667px; margin-right: 50px;">
                      <a data-fancybox="gallery-0" href="./Images/Gallery/Gallery(6).png" data-expand="-1" class=" lazy">
                         <img src="./Images/Gallery/Gallery(6).png" alt="availon farms gallery" class="img-fluid py-2" width="406px" height="505px">
+                     </a>
+                  </div>
+                  <div class="swiper-slide" role="group" aria-label="3 / 13" bis_skin_checked="1" style="width: 406.667px; margin-right: 50px;">
+                     <a data-fancybox="gallery-0" href="./Images/Gallery/Gallery(7).png" data-expand="-1" class="lazy entered exited" data-ll-status="entered">
+                        <img alt="availon farms gallery" class="img-fluid py-2 lazy entered exited" width="406px" height="505px" src="./Images/Gallery/Gallery(7).png">
+                     </a>
+                  </div>
+                  <div class="swiper-slide" role="group" aria-label="4 / 13" bis_skin_checked="1" style="width: 406.667px; margin-right: 50px;">
+                     <a data-fancybox="gallery-0" href="./Images/Gallery/Gallery(8).png" data-expand="-1" class=" lazy">
+                        <img src="./Images/Gallery/Gallery(8).png" alt="availon farms gallery" class="img-fluid py-2 lazy" width="406px" height="505px">
+                     </a>
+                  </div>
+                  <div class="swiper-slide" role="group" aria-label="6 / 13" bis_skin_checked="1" style="width: 406.667px; margin-right: 50px;">
+                     <a data-fancybox="gallery-0" href="./Images/Gallery/Gallery(10).png" data-expand="-1" class=" lazy">
+                        <img src="./Images/Gallery/Gallery(10).png" alt="availon farms gallery" class="img-fluid py-2" width="406px" height="505px">
+                     </a>
+                  </div>
+                  <div class="swiper-slide" role="group" aria-label="6 / 13" bis_skin_checked="1" style="width: 406.667px; margin-right: 50px;">
+                     <a data-fancybox="gallery-0" href="./Images/Gallery/Gallery(11).png" data-expand="-1" class=" lazy">
+                        <img src="./Images/Gallery/Gallery(11).png" alt="availon farms gallery" class="img-fluid py-2" width="406px" height="505px">
                      </a>
                   </div>
                   <!-- <div class="swiper-slide" role="group" aria-label="7 / 13" bis_skin_checked="1" style="width: 406.667px; margin-right: 50px;">
@@ -2483,11 +2604,7 @@ dl, ol, ul{
         <div class="main-content-ctc">
           <div class="map-section-ctc">
             <div class="map-container pulse-animation">
-              <img
-                src="./Images/Loc-Adv (1).png"
-                alt="Location Map"
-                class="map-image-ctc"
-              />
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.340140214475!2d77.82629316745908!3d13.07761644658437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae05000ffc422d%3A0x186c8c190e8864df!2sVijayasri%20Vijetha&#39;s%20Carpe%20diem%20(county%20par%20excellence)!5e0!3m2!1sen!2sin!4v1767952256797!5m2!1sen!2sin" width="480" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
 
@@ -2658,12 +2775,107 @@ dl, ol, ul{
    </div>
 
 
+<section class="contact-form"  style="background-color: #3B4B31;">
+   <div class="row" id="contact" bis_skin_checked="1">
+      <h2 class="heading text-center text-dark">Contact </h2>
+      <p class="text-center fs-6" style="color: #fff;">We are excited to serve you. Let's connect!</p>
+   </div>
+   <div class="row" bis_skin_checked="1">
 
+
+      <div class="offset-md-2 col-md-8" bis_skin_checked="1">
+         <div class="row pb-4 pt-2 mx-auto d-block ps-3" bis_skin_checked="1">
+            <form action="" id="footer-form" >
+               <div class="row pt-2" id="footer-note"></div>
+               <div class="row pt-2">
+                  <div class="col">
+                     <input type="text" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0" placeholder="Name" aria-label="Name" name="name">
+                  </div>
+                  <div class="col">
+                     <input type="email" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0" placeholder="Email" aria-label="Email" name="email">
+                  </div>
+               </div>
+               <div class="row pt-2">                        
+                  <div class="col-12">
+                     <input type="text" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0" placeholder="Phone" aria-label="Phone" name="phone">
+                  </div>
+                  <div class="col-4 d-none">
+                     <input type="text" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0" placeholder="OTP" aria-label="otp" name="otp">
+                  </div>
+               </div>
+               <!-- <div class="row pt-2">                        
+                  <div class="col-12">
+                     <select name="classification" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0">
+                         <option value="">Preferred Classification</option>
+                         <option value="2BHK Farm House Starting at 3.90 Cr onwards">2BHK Farm House Starting at 3.90 Cr onwards*</option>
+                         <option value="3BHK Farm House Starting at 4.15 Cr onwards">3BHK Farm House Starting at 4.15 Cr onwards*</option>
+                     </select>                           
+                  </div>
+               </div>
+               <div class="row pt-2">                        
+                  <div class="col-12">
+                     <select name="looking" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0">
+                        <option value="">Are you looking for a Luxury Farmhouse in Doddaballapura</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        
+                    </select>   
+                  </div>
+               </div> -->
+               <div class="row pt-2">                        
+                  <div class="col-12">
+                     <select name="time" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0">
+                         <option value="">Best Time To Call</option>
+                         <option value="9:30 AM To 01:00 PM">9:30 AM To 01:00 PM</option>
+                         <option value="01:00 PM To 6:00 PM">01:00 PM To 6:00 PM</option>
+                         <option value="6:00 PM Onwards">6:00 PM Onwards</option>
+                     </select>                                                     
+                  </div>
+               </div>
+               <div class="row pt-2">
+                  <div class="col">
+                     <textarea class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0" placeholder="Message" id="floatingTextarea" name="message"></textarea>
+                  </div>
+               </div>
+               <div class="row pt-3 pb-3">
+                  <div class="col text-center">
+                     <button id="footer-btn" type="submit" class="btn text-white bg-dark rounded-0 px-3">
+                        Submit
+                     </button>
+                  </div>
+               </div>
+            </form> 
+         
+         
+            <!-- <form action="" id="popup-form">
+               <div class="popup-note" style="display: none;"></div>
+               <div class="text-center pb-3 px-2 rounded-2">
+                  <input type="text" class="form-control mt-3 py-2" name="name" placeholder="Name" required>
+                  <input type="email" class="form-control mt-3 py-2" name="email" placeholder="Email" required>
+                  <input type="text" class="form-control mt-3 py-2" name="phone" placeholder="Phone" required>
+                  
+                  <select name="time" class="form-control mt-3 py-2">
+                     <option value="">Best Time To Call</option>
+                     <option value="9:30 AM To 01:00 PM">9:30 AM To 01:00 PM</option>
+                     <option value="01:00 PM To 6:00 PM">01:00 PM To 6:00 PM</option>
+                     <option value="6:00 PM Onwards">6:00 PM Onwards</option>
+                  </select>
+                  
+                  <textarea name="message" cols="30" rows="2" placeholder="Message" class="form-control mt-3 py-2"></textarea>
+                  
+                  <button type="submit" id="popup-btn" class="btn text-light border-white mt-3 w-50" style="background-color: gray;">Submit</button>
+               </div>
+            </form>
+          -->
+         </div>
+      </div>
+   </div>
+</section>
 
    <section class="footer py-4 bg-main">
 
       <div class="container" bis_skin_checked="1">
-         <div class="row" id="contact" bis_skin_checked="1">
+         <!-- <div class="row" id="contact" bis_skin_checked="1">
             <h2 class="heading text-center text-dark">Contact </h2>
             <p class="text-center fs-6">We are excited to serve you. Let's connect!</p>
          </div>
@@ -2690,25 +2902,6 @@ dl, ol, ul{
                            <input type="text" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0" placeholder="OTP" aria-label="otp" name="otp">
                         </div>
                      </div>
-                     <!-- <div class="row pt-2">                        
-                        <div class="col-12">
-                           <select name="classification" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0">
-                               <option value="">Preferred Classification</option>
-                               <option value="2BHK Farm House Starting at 3.90 Cr onwards">2BHK Farm House Starting at 3.90 Cr onwards*</option>
-                               <option value="3BHK Farm House Starting at 4.15 Cr onwards">3BHK Farm House Starting at 4.15 Cr onwards*</option>
-                           </select>                           
-                        </div>
-                     </div>
-                     <div class="row pt-2">                        
-                        <div class="col-12">
-                           <select name="looking" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0">
-                              <option value="">Are you looking for a Luxury Farmhouse in Doddaballapura</option>
-                              <option value="Yes">Yes</option>
-                              <option value="No">No</option>
-                              
-                          </select>   
-                        </div>
-                     </div> -->
                      <div class="row pt-2">                        
                         <div class="col-12">
                            <select name="time" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0">
@@ -2734,35 +2927,12 @@ dl, ol, ul{
                   </form> 
                
                
-                  <!-- <form action="" id="popup-form">
-                     <div class="popup-note" style="display: none;"></div>
-                     <div class="text-center pb-3 px-2 rounded-2">
-                        <input type="text" class="form-control mt-3 py-2" name="name" placeholder="Name" required>
-                        <input type="email" class="form-control mt-3 py-2" name="email" placeholder="Email" required>
-                        <input type="text" class="form-control mt-3 py-2" name="phone" placeholder="Phone" required>
-                        
-                        <select name="time" class="form-control mt-3 py-2">
-                           <option value="">Best Time To Call</option>
-                           <option value="9:30 AM To 01:00 PM">9:30 AM To 01:00 PM</option>
-                           <option value="01:00 PM To 6:00 PM">01:00 PM To 6:00 PM</option>
-                           <option value="6:00 PM Onwards">6:00 PM Onwards</option>
-                        </select>
-                        
-                        <textarea name="message" cols="30" rows="2" placeholder="Message" class="form-control mt-3 py-2"></textarea>
-                        
-                        <button type="submit" id="popup-btn" class="btn text-light border-white mt-3 w-50" style="background-color: gray;">Submit</button>
-                     </div>
-                  </form>
-                -->
                </div>
             </div>
-         </div>
+         </div> -->
 
 
          <div class="row py-3 border-top  text-center pb-4" bis_skin_checked="1">
-            <!-- <div class="sub-text" style="padding: 2rem 0;">
-               PROJECT BY <br> VIJAYA SRI | VIJETHA <br>VIJAYASRI VIJETHA INFRA PROJECTS
-            </div> -->
             <div class="col-md-33 col-12" bis_skin_checked="1">
                <div class="f-details" bis_skin_checked="1">
                   <h5 class="pb-3">PROJECT BY</h5>
@@ -3468,80 +3638,56 @@ $(document).ready(function () {
          //   name: "EAST FACING VILLA 30' X 50'",
          //   desc: "View detailed floor plans for this villa configuration",
            images: [
-               './Images/Floor-plan.png',
-               './Images/Floor-plan.png',
-               './Images/Floor-plan.png',
-               './Images/Floor-plan.png',
+               './Images/floor-plans/floor plan (1).png',
            ]
        },
        'west-30x40': {
          //   name: "WEST FACING VILLA 30' X 40'",
          //   desc: "View detailed floor plans for this villa configuration",
            images: [
-               './Images/NORTH_VILLA_NIGHT_VIEW.jpg',
-               './Images/NORTH_VILLA_NIGHT_VIEW.jpg',
-               './Images/NORTH_VILLA_NIGHT_VIEW.jpg',
-               './Images/NORTH_VILLA_VIEW.jpg'
+               './Images/floor-plans/floor plan (2).png',
            ]
        },
        'north-30x50': {
          //   name: "NORTH FACING VILLA 30' X 50'",
          //   desc: "View detailed floor plans for this villa configuration",
            images: [
-               './Images/SOUTH_VILLA-NIGHT_VIEW.jpg',
-               './Images/SOUTH_VILLA-NIGHT_VIEW.jpg',
-               './Images/SOUTH_VILLA-NIGHT_VIEW.jpg',
-               './Images/SOUTH_VILLA-VIEW.jpg'
+               './Images/floor-plans/floor plan (3).png',
            ]
        },
        'south-30x50': {
          //   name: "SOUTH FACING VILLA 30' X 50'",
          //   desc: "View detailed floor plans for this villa configuration",
            images: [
-               './Images/WEST_VILLA-NIGHT_VIEW.jpg',
-               './Images/WEST_VILLA-NIGHT_VIEW.jpg',
-               './Images/WEST_VILLA-NIGHT_VIEW.jpg',
-               './Images/WEST_VILLA-VIEW.jpg'
+               './Images/floor-plans/floor plan (4).png',
            ]
        },
        'east-40x40': {
          //   name: "EAST FACING VILLA 40' X 40'",
          //   desc: "View detailed floor plans for this villa configuration",
            images: [
-               './Images/WEST_VILLA-NIGHT_VIEW.jpg',
-               './Images/WEST_VILLA-NIGHT_VIEW.jpg',
-               './Images/WEST_VILLA-NIGHT_VIEW.jpg',
-               './Images/WEST_VILLA-VIEW.jpg'
+               './Images/floor-plans/floor plan (5).png',
            ]
        },
        'west-40x40': {
          //   name: "WEST FACING VILLA 40' X 40'",
          //   desc: "View detailed floor plans for this villa configuration",
            images: [
-               './Images/WEST_VILLA-NIGHT_VIEW.jpg',
-               './Images/WEST_VILLA-NIGHT_VIEW.jpg',
-               './Images/WEST_VILLA-NIGHT_VIEW.jpg',
-               './Images/WEST_VILLA-VIEW.jpg'
+               './Images/floor-plans/floor plan (6).png',
            ]
        },
        'south-40x50': {
          //   name: "SOUTH FACING VILLA 40' X 50'",
          //   desc: "View detailed floor plans for this villa configuration",
            images: [
-               './Images/WEST_VILLA-NIGHT_VIEW.jpg',
-               './Images/WEST_VILLA-NIGHT_VIEW.jpg',
-               './Images/WEST_VILLA-NIGHT_VIEW.jpg',
-               './Images/WEST_VILLA-VIEW.jpg'
+               './Images/floor-plans/floor plan (7).png',
            ]
        },
        'east-30x40': {
          //   name: "EAST FACING VILLA 30' X 40'",
          //   desc: "View detailed floor plans for this villa configuration",
            images: [
-               './Images/WEST_VILLA-NIGHT_VIEW.jpg',
-               './Images/WEST_VILLA-NIGHT_VIEW.jpg',
-               './Images/WEST_VILLA-NIGHT_VIEW.jpg',
-               './Images/WEST_VILLA-VIEW.jpg'
+               './Images/floor-plans/floor plan (8).png',
            ]
        }
    };
