@@ -43,7 +43,8 @@ p{
 
 .semi-transparant {
   /* background: #3B4B31; */
-  background: linear-gradient(to bottom,#2f402e 0%,#486641 45%,#2f402e 100%);
+  /* background: linear-gradient(to bottom,#2f402e 0%,#486641 45%,#2f402e 100%); */
+  background: linear-gradient(to bottom,#3B5437 0%,#4F7347 45%,#212C21 100%);
 }
 
 .semi-light-gray {
