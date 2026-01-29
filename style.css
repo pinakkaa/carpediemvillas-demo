@@ -42,7 +42,8 @@ p{
 }
 
 .semi-transparant {
-  background: #3B4B31;
+  /* background: #3B4B31; */
+  background: linear-gradient(to bottom,#2f402e 0%,#486641 45%,#2f402e 100%);
 }
 
 .semi-light-gray {
@@ -61,7 +62,7 @@ p{
 }
 
 .bg-main {
-  background: #faf3ef;
+  background: #fff;
 }
 .heading {
   padding: 20px 0;

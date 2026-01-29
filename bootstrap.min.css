@@ -10446,11 +10446,12 @@ fieldset:disabled .btn {
 /*# sourceMappingURL=bootstrap.min.css.map */
 
 .footer-bottom {
-    background: #3B4B31;      /* Change if your site uses a different footer color */
+    /* background: #3B4B31;      */
     color: #ffffff;
     text-align: center;
     padding: 12px 10px;
     font-size: 14px;
+    background: linear-gradient(to bottom,#2f402e 0%,#486641 45%,#2f402e 100%);
 }
 
 .footer-bottom a {
